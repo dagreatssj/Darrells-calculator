@@ -3,5 +3,112 @@
 {% block title %}title of page{% endblock %}
 
 {% block calculator %}
-	<p>cal</p>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>QVC Calculator</h1>
+			<p>This is an awesome Calculator for QVC meant to calculate all your savings!</p>
+			<div id="calculator" class="row">
+				<div class="col-md-6">
+					<div class="well">
+						<table width="100%">
+							<thead>
+								<tr>
+									<input type="text" style="width: 100%;">
+								</tr>
+							</thead>
+							<br><br>
+							<tbody>
+								<tr>
+									<td>
+										<a class="btn btn-block btn-danger" href="#" role="button">(-)</a>
+									</td>
+									<td>
+										<a class="btn btn-block btn-info" href="#" role="button">^</a>
+									</td>
+									<td>
+										<a class="btn btn-block btn-warning" href="#" role="button">(</a>
+									</td>
+									<td>
+										<a class="btn btn-block btn-warning" href="#" role="button">)</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">7</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">8</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">9</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-primary btn-block" href="#" role="button">+</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">4</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">5</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">6</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-primary btn-block" href="#" role="button">-</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">3</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">2</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">1</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-primary btn-block" href="#" role="button">x</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">0</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">.</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-default btn-block" href="#" role="button">C</a>
+									</td>
+									<td>
+										<a class="btn btn-lg btn-primary btn-block" href="#" role="button">/</a>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td>
+									</td>
+									<td>
+									</td>
+									<td colspan="2">
+										<a class="btn btn-lg btn-success btn-block" href="#" role="button">=</a>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<p>History</p>
+					<div id="history">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}
