@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{{ title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content"">
+	<meta name="author" content"">
+	<link href="{{ url_for('static', filename="bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
+	<style>
+		body {
+			padding-top: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="{{ url_for('index') }}">QVC Calculator</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class="active"><a href="{{ url_for('index') }}">Calculator</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			{% block calculator %}
+			{% endblock %}
+		</div>
+	</div>
+</body>
+</html>
