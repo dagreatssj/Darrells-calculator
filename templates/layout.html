@@ -8,6 +8,7 @@
 	<meta name="description" content"">
 	<meta name="author" content"">
 	<link href="{{ url_for('static', filename="bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename="main.css") }}" rel="stylesheet">
 	<style>
 	body {
 		padding-top: 60px;
@@ -37,5 +38,7 @@
 	</div>
 	{% block calculator %}
 	{% endblock %}
+	<script src="{{ url_for('static', filename="jquery-1.11.1.min.js") }}"></script>
+	<script src="{{ url_for('static', filename="calculator-functionality.js") }}"></script>
 </body>
 </html>
