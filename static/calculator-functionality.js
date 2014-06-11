@@ -11,7 +11,7 @@ $(".btn").click(function(e) {
 });
 
 function addToScreen(value) {
-	var input = $('input[name="screen"');
+	var input = $('input[name="screen"]');
 	input.val(input.val() + value);
 }
 
