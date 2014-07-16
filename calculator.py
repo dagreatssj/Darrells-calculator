@@ -6,4 +6,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	return render_template("index.html", title='QVC Calculator')
+	return render_template("index.html", title='Darrell\'s Calculator')
