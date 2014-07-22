@@ -1,0 +1,62 @@
+{% extends 'layout.html'  %}
+
+{% block title %}title of page{% endblock %}
+
+{% block calculator %}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div id="calculator">
+						<div id="screen">
+							<p>2+2 = 4</p>
+						</div>
+						<br>
+						<div id="pad">
+							<div class="sections">
+								<a href="#" class="btn number-buttons">+/-</a>
+								<a href="#" class="btn number-buttons">exp</a>
+								<a href="#" class="btn number-buttons">(</a>
+								<a href="#" class="btn number-buttons">)</a>
+							</div>
+							<div class="sections">
+								<a href="#" class="btn number-buttons">7</a>
+								<a href="#" class="btn number-buttons">8</a>
+								<a href="#" class="btn number-buttons">9</a>
+								<a href="#" class="btn number-buttons">/</a>
+							</div>
+							<div class="sections">
+								<a href="#" class="btn number-buttons">4</a>
+								<a href="#" class="btn number-buttons">5</a>
+								<a href="#" class="btn number-buttons">6</a>
+								<a href="#" class="btn number-buttons">*</a>
+							</div>
+							<div class="sections">
+								<a href="#" class="btn number-buttons">1</a>
+								<a href="#" class="btn number-buttons">2</a>
+								<a href="#" class="btn number-buttons">3</a>
+								<a href="#" class="btn number-buttons"><span class="glyphicon glyphicon-minus"></span></a>
+							</div>
+							<div class="sections">
+								<a href="#" class="btn number-buttons">0</a>
+								<a href="#" class="btn number-buttons">.</a>
+								<a href="#" class="btn number-buttons">%</a>
+								<a href="#" class="btn number-buttons"><span class="glyphicon glyphicon-plus"></span></a>
+							</div>
+							<div class="sections">
+								<a href="#" class="btn number-buttons"><span class="glyphicon glyphicon-send"></span></a>
+								<a href="#" class="btn number-buttons"><span class="glyphicon glyphicon-floppy-disk"></span></a>
+								<a href="#" class="btn number-buttons"><span class="glyphicon glyphicon-arrow-left"></span></a>
+								<a href="#" class="btn number-buttons">=</a>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h3>History</h3>
+				<div id="history">
+					<p>test</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
