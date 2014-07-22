@@ -1,4 +1,4 @@
-#calculator {
+#calculator-case {
 	margin: 15px;
 	padding: 15px;
 	border: 1px solid #b266ff;
@@ -11,7 +11,7 @@
 	padding: 10px;
 }
 
-#screen {
+#calculator-screen {
 	min-height: 50px;
 	font-family: arial, sans-serif;
 	font-size: 30px;
@@ -26,7 +26,7 @@
 		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 
-#history {
+#history-output {
 	min-height: 200px;
 	width: 90%;
 	color: #fff;
